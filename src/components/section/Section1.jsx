@@ -6,7 +6,9 @@ import About from "../About";
 const Section1 = () => {
   return (
     <div className="w-[100vw]">
-      <SplashCursor />
+      <div className="hidden lg:block">
+        <SplashCursor />
+      </div>
       <div className="absolute z-200 w-full h-screen">
           <ModelViewer />
       </div>

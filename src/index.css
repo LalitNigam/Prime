@@ -7,10 +7,10 @@
     font-weight: normal;
     font-style: normal;
 }
-
 .Prime{
     font-family: 'Prime';
 }
+
 @font-face{
     font-family: 'lemon';
     src: url("./font/lemon.ttf");

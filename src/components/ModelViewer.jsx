@@ -116,12 +116,12 @@ const MagnetModelViewer = () => {
   useEffect(() => {
     gsap.fromTo(
       divRef.current,
-      { rotate: 20, x: 0, scale: 1 },
+      { rotate: 25, x: 0, scale: 1 },
       {
-        x: -450,
+        x: -300,
         rotate: -30,
-        scale: 1.3,
-        duration: 3,
+        scale: 1.4,
+        duration: 4,
         scrollTrigger: {
           trigger: divRef.current,
           start: "top top",
@@ -141,24 +141,16 @@ const MagnetModelViewer = () => {
         <Magnet magnetStrength={15}>
           <motion.div
             initial={{ opacity: 0, y: 100 }}
-            transition={{ duration: 2, delay: 3 }}
+            transition={{ duration: 2, delay: 1 }}
             whileInView={{ opacity: 1, y: 0 }}
-            style={{ width: "90vw", height: "90vh", position: "relative" }}
+            style={{ width: "95vw", height: "90vh", position: "relative" }}
             className="mt-90">
             <Canvas
               ref={divRef}
               style={{ position: "relative" }}
               camera={{ position: [400, 10, 700], fov: 90 }}>
-              <ambientLight intensity={0.4} />
-              <directionalLight position={[1, 1, 1]} intensity={1} />
-              <directionalLight
-                position={[10, 10, 10]}
-                intensity={1.5}
-                castShadow
-                shadow-mapSize-width={2048}
-                shadow-mapSize-height={2048}
-                shadow-bias={-0.0001}
-              />
+              <ambientLight intensity={0.1} />
+              <directionalLight position={[0.5, 0.5, 0.5]} intensity={0.5} />
               <Suspense fallback={null}>
                 <Model />
                 <mesh
@@ -167,7 +159,7 @@ const MagnetModelViewer = () => {
                   position={[0, -255, 0]}
                 >
                   <planeGeometry args={[2000, 2000]} />
-                  <shadowMaterial opacity={0.35} />
+                  <shadowMaterial opacity={0.85} />
                 </mesh>
               </Suspense>
               <OrbitControls enableZoom={false} />

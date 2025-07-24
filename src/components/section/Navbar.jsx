@@ -26,7 +26,9 @@ export default function Navbar() {
       animate={{ y: showNav ? 0 : "-100%" }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
-      <div className="Prime text-3xl">P R I M E</div>
+      <div
+      style={{fontFamily: 'Prime',}}
+      className="text-3xl">P R I M E</div>
       <div className="md:space-x-20 space-x-3">
         <Link to="/" className="hover:text-rose-600 font-bold md:text-2xl">Home</Link>
         <Link to="/products" className="hover:text-rose-600 font-bold md:text-2xl">Products</Link>

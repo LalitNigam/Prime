@@ -100,7 +100,9 @@ const About = () => {
       </div>
       <div className="md:w-[60%] w-[100%] h-full">
         <div className="hero-content relative w-full h-full">
-          <p className="Prime text-rose-800 lg:text-[4.2em] md:text-[3.5em] text-[2.5em] md:px-18 px-8 pt-10 text-center">
+          <p 
+          style={{fontFamily: 'Prime',}}
+          className="Pirme text-rose-800 lg:text-[4.2em] md:text-[3.5em] text-[2.5em] md:px-18 px-8 pt-10 text-center">
             We dropped our first product,
           </p>
           <div
@@ -113,7 +115,9 @@ const About = () => {
               PRIME HYDRATION
             </div>
           </div>
-          <p className="Prime text-rose-800 lg:text-[4em] md:text-[3.5em] text-[2.5em] md:p-17 p-20 text-center">
+          <p 
+          style={{fontFamily: 'Prime',}}
+          className="Prime text-rose-800 lg:text-[4em] md:text-[3.5em] text-[2.5em] md:p-17 p-20 text-center">
             in 2022 and since then, <br /> we've continued to work countless
             hours to expand in retailers, <br /> reach new markets and formulate
             new products we know you'll love.
