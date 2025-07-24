@@ -1,0 +1,25 @@
+@import url('https://fonts.cdnfonts.com/css/pp-neue-montreal');
+@import "tailwindcss";
+
+@font-face{
+    font-family: 'Prime';
+    src: url("./font/Prime.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Prime{
+    font-family: 'Prime';
+}
+@font-face{
+    font-family: 'lemon';
+    src: url("./font/lemon.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lemon{
+    font-family: 'lemon';
+}
+
+
