@@ -11,7 +11,7 @@ const About = () => {
   const scale = useTransform(scrollYProgress, [0.2, 0], [1, 0]);
   useGSAP(() => {
     document.fonts.ready.then(() => {
-      const titleSplit = new SplitText(".Prime", { type: "words" });
+      const titleSplit = new SplitText(".Prime1", { type: "words" });
       const heroContent = document.querySelector(".main");
 
       gsap.timeline({
@@ -100,13 +100,12 @@ const About = () => {
       </div>
       <div className="md:w-[60%] w-[100%] h-full">
         <div className="hero-content relative w-full h-full">
-          <p 
-          style={{fontFamily: 'Prime',}}
-          className="Pirme text-rose-800 lg:text-[4.2em] md:text-[3.5em] text-[2.5em] md:px-18 px-8 pt-10 text-center">
+          <p
+          className="Prime1 font-bold text-rose-800 lg:text-[3.5em] md:text-[3.5em] text-[2.1em] md:px-16 px-4 pt-10 text-center">
             We dropped our first product,
           </p>
           <div
-            className="hero-text-scroll absolute rotate-[-3deg] text-[3em] text-center font-bold  md:top-28 top-36 md:left-60 left-5 overflow-hidden z-400"
+            className="hero-text-scroll absolute rotate-[-3deg] text-[2.5em] text-center font-bold  md:top-28 top-36 md:left-60 left-5 overflow-hidden z-400"
             style={{
               clipPath: "polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)",
             }}
@@ -115,9 +114,8 @@ const About = () => {
               PRIME HYDRATION
             </div>
           </div>
-          <p 
-          style={{fontFamily: 'Prime',}}
-          className="Prime text-rose-800 lg:text-[4em] md:text-[3.5em] text-[2.5em] md:p-17 p-20 text-center">
+          <p
+          className="Prime1 font-bold text-rose-800 lg:text-[3.4em] md:text-[3.5em] text-[2.2em] md:p-14 p-7 pt-22 text-center">
             in 2022 and since then, <br /> we've continued to work countless
             hours to expand in retailers, <br /> reach new markets and formulate
             new products we know you'll love.

@@ -50,6 +50,9 @@ const Hero = () => {
             speed={1.0}
           />
         </div>
+        <div className="absolute top-70 left-20 md:hidden block">
+          <img src="https://drinkprime.com/cdn/shop/files/Prime_hydration_1serve_16.9oz_US_CherryFreeze_Fortis_00000_2000x.png?v=1745589968" alt="image1" className="w-60 rotate-[-35deg]"/>
+        </div>
         <div className=" relative z-10 w-full h-full flex flex-col 2xl:justify-start items-center translate-y-10 lg:pt-13 md:pt-15 pt-30">
           <div className="overflow-hidde">
             <h1 className="hero-title text-rose-200 2xl:text-[12rem] md:text-[8rem] text-[5rem] font-bold uppercase leading-[9vw] tracking-[-.35vw] mb-1 md:-mb-3">
@@ -69,7 +72,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="w-full h-full flex justify-center md:text-4xl text-2xl items-center md:px-60 px-25">
+          <div className="w-full h-full flex justify-center md:text-4xl text-2xl items-center md:px-60 px-8">
             <TextType
               text={[
                 "Welcome to Prime Hydration, your ultimate refreshment destination!",

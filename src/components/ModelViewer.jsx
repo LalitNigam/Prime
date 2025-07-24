@@ -136,8 +136,8 @@ const MagnetModelViewer = () => {
     <div
       id="scroll-section"
       style={{ width: "screen", height: "176vh", position: "relative" }}
-      className="relative">
-      <div style={{ position: "sticky" }} className="top-0 flex items-center justify-center lg:w-[90%] md:w-[80%] w-[90%] h-[100vh]">
+      className="relative hidden lg:block">
+      <div style={{ position: "sticky" }} className="top-0 flex items-center justify-center lg:w-[90%] md:w-[80%] w-[50%] md:h-[100vh]">
         <Magnet magnetStrength={15}>
           <motion.div
             initial={{ opacity: 0, y: 100 }}
