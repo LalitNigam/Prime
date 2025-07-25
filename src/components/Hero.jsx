@@ -72,7 +72,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="w-full h-full flex justify-center md:text-4xl text-2xl items-center md:px-60 px-8">
+          <div className="w-full h-full flex justify-center md:text-4xl text-2xl items-center md:pr-250 px-8">
             <TextType
               text={[
                 "Welcome to Prime Hydration, your ultimate refreshment destination!",
